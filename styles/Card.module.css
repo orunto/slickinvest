@@ -1,0 +1,16 @@
+.CardSection {
+    width: calc(100% - 300px);
+    padding: 134px 150px 224px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardSection h2 {
+    max-width: 805px;
+    text-align: center;
+}
+
+.card_container {
+    display: flex
+}

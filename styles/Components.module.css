@@ -1,0 +1,480 @@
+.nav {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    transition: 0.3s;
+    /* background-color: #fff; */
+}
+
+.desktop_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 150px 0 150px;
+    width: calc(100% - 300px);
+    transition: 0.3s;
+    z-index: 2;
+    position: relative;
+    background-color: transparent;
+    color: #fff;
+}
+
+.desktop_nav div {
+    display: flex;
+    gap: 8px;
+}
+
+.desktop_nav img {
+    padding: 7px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 9px 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.product_nav {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 1;
+    filter: drop-shadow(0px 2px 8px #D3DAE2);
+    position: relative;
+    padding: 4px 0 24px 0;
+    /* transition: 0.3s; */
+}
+
+.product_list_desktop {
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    width: 296px;
+    padding: 0;
+}
+
+/* .product_dropdown:hover > .product_list_desktop {
+    display: flex;
+} */
+
+.nav ul li span {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.NavButton {
+    border-radius: 49px;
+    border: 1px solid #FFF;
+    background: #FFF;
+
+    display: flex;
+    width: 135px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #1A1A1A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+
+    cursor: pointer;
+    /* filter: drop-shadow(0px 4.287954807281494px 8.575909614562988px #D3DAE2); */
+    transition: 0.3s;
+}
+
+.NavButton:hover {
+    transform: scale(1.02,1.02);
+    filter: drop-shadow(0px 4.287954807281494px 8.575909614562988px #D3DAE2);
+}
+
+.NavButton:active {
+    transform: scale(1,1);
+    filter: none;
+}
+
+.hamburger {
+    display:none
+}
+
+.mobile_nav {
+    display:none
+}
+
+
+
+
+/* BUTTON */
+.button {
+    min-width: 280px;
+    max-width: 280px;
+    padding: 16px 0;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    background: #36F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.02,1.02);
+    filter: drop-shadow(0px 4.287954807281494px 8.575909614562988px #D3DAE2);
+}
+
+.button:active {
+    transform: scale(1,1);
+    filter: none;
+}
+
+
+/* SIGN UP MODAL */
+.sign_up_modal {
+    position: fixed;
+    top: calc(50% - ((100% - 100px)/2));
+    left: calc(50% - ((100% - 400px)/2));
+    width: calc(100% - 400px);
+    height: calc(100% - 100px);
+    font-family: inherit;
+    overflow-y: scroll;
+    overflow-x: hidden;
+        background-color: #fff;
+    filter: drop-shadow(0px 4.287954807281494px 8.575909614562988px #D3DAE2);
+    z-index: 2;
+    
+}
+
+.sign_up_modal_top_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 160px);
+    margin: 40px 80px;
+}
+
+.sign_up_modal_div h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.sign_up_modal_div p {
+    width: 100%;
+    text-align: center;
+}
+
+
+.sign_up_modal_div svg {
+    width: 100%;
+    height: 200px
+    /* text-align: center; */
+}
+
+.sign_up_modal_div {
+    width: calc(100% - 160px);
+    height: calc(100% - 160px);
+    margin: auto;
+    display: flex;
+    font-family: inherit;
+    flex-direction: column;
+    align-items: stretch;
+        gap: 24px;
+        font-size: 16px;
+    justify-content: space-between;
+}
+
+.sign_up_modal_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.sign_up_modal_inputs_div {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.sign_up_modal_inputs_div div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+.sign_up_modal_div input {
+    width: calc(100% - 32px);
+    padding: 16px;
+    border: 2px solid #D3DAE2;
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.sign_up_modal_div select {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #D3DAE2;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.sign_up_modal_div button {
+    width: 100%;
+    padding: 16px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    background: #36F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    align-self: flex-end;
+}
+
+.sign_up_modal button:hover {
+    transform: scale(1.01,1.01);
+    filter: drop-shadow(0px 4.287954807281494px 8.575909614562988px #D3DAE2);
+}
+
+.sign_up_modal button:active {
+    transform: scale(1,1);
+    filter: none;
+}
+
+.sign_up_modal button:disabled {
+    background-color: #D3DAE2;
+    filter: none;
+}
+
+
+.sign_up_modal button:disabled:hover {
+    background-color: #D3DAE2;
+    transform: scale(1,1);
+}
+
+
+
+/* TEXT BUBBLES */
+.placeholder {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px!important;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+
+.green {
+    display: flex;
+    width: 298px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    filter: drop-shadow(4px 4px 4px rgba(67, 204, 71, 0.20));
+    color: #fff;
+    gap: 0!important;
+}
+
+.blue {
+    display: flex;
+    width: 298px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    filter: drop-shadow(4px 4px 4px rgba(25, 130, 252, 0.20));
+    color: #fff;
+    gap: 0!important;
+    align-self: flex-end;
+}
+
+.green p {
+    font-size: 16px!important;
+    text-align: left!important;
+}
+.green div {
+    background-color: #43CC47;
+    margin-left: -20px;
+}
+
+.blue div {
+    background-color: #008DC9;
+}
+
+.blue p {
+    font-size: 16px!important;
+    text-align: left!important;
+}
+
+.blue svg {
+    margin-left: -20px;
+}
+
+.tail {
+    display: flex;
+    width: 0.1px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.bubble {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 12px;
+    width: calc(100% - 24px)!important;
+    justify-content: flex-start;
+    gap: 10px!important;
+    align-items: flex-end;
+    flex: 1 0 0;
+    border-radius: 11px;
+}
+
+.bubble img {
+    object-fit: cover;
+}
+
+
+@media (max-width: 1300px) {
+    
+    .sign_up_modal_div {
+        padding-bottom: 24px;
+        height: unset;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+    .sign_up_modal {
+        left: calc(50% - ((100% - 200px)/2));
+        width: calc(100% - 200px);
+        }
+    
+        .desktop_nav{
+            padding: 24px 80px;
+            width: calc(100% - 160px)
+        }
+}
+
+
+@media (max-width: 770px) {
+    .sign_up_modal {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+    }
+
+    .sign_up_modal_div {
+        gap: 40px
+    }
+
+    .sign_up_modal_inputs_div {
+        flex-direction: column;
+    }
+    .desktop_nav {
+        padding: 30px 30px;
+        width: calc(100% - 60px);
+    }
+
+    .desktop_nav ul {
+        display: none;
+    }
+
+    .desktop_nav button {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile_nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 30px 30px 30px;
+        width: calc(100% - 60px);
+        flex-direction: column;
+        filter: drop-shadow(0px 2px 2px #D3DAE2);
+        gap: 32px;
+        align-items: flex-end;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+
+    .mobile_nav button {
+        max-width: 102px;
+    }
+
+    .mobile_nav ul {
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+        gap: 32px;
+        align-items: flex-end;
+    }
+    
+    .product_list  {
+        transition: 0.3s;
+        font-size: 14px!important;
+    }
+    
+}
+
+
+@media (max-width: 500px) {
+    .sign_up_modal {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+    }
+
+    .sign_up_modal_top_div{
+        margin: 30px 30px;
+    }
+
+    .sign_up_modal_div {
+        width: calc(100% - 60px);
+    }
+
+    .sign_up_modal .NavButton {
+        display: none!important
+    }
+}
