@@ -368,6 +368,94 @@
 }
 
 
+
+
+/* ATM CARDS */
+.cards {
+    display: flex;
+    max-height: 371px;
+    overflow-y: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.71);
+    background: linear-gradient(180deg, rgba(124, 29, 104, 0.50) 0%, rgba(245, 161, 236, 0.50) 84.86%), #5D11FF;
+    height: 490px;
+    position: relative;
+}
+
+
+
+
+.card_details {
+    padding: 34px 28px 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    z-index: 2;
+}
+
+.card_details div {
+    display: flex;
+    gap: 183px;
+    align-items: center;
+}
+
+.card_details article {
+    display: flex;
+    flex-direction: column;
+    gap: 69px
+}
+
+.card_details span {
+    font-size: 13px;
+}
+
+.card_details p {
+    font-size: 26px!important;
+    color: #fff!important;
+    height: min-content
+}
+
+.card_details_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_details_bottom p {
+    font-size: 17px;
+}
+
+.card_bg {
+    display: flex;
+    height: 490px;
+    position: relative;
+    top: -490px;
+    width: 100%;
+}
+
+.card_bg_bottom {
+    background: linear-gradient(92deg, rgba(249, 249, 249, 0.06) 8.4%, rgba(36, 36, 36, 0.08) 51.15%, rgba(0, 0, 0, 0.00) 108.24%, rgba(72, 72, 72, 0.09) 108.24%), linear-gradient(179deg, rgba(49, 48, 43, 0.20) 0.61%, rgba(35, 33, 27, 0.20) 67.41%, rgba(28, 28, 28, 0.00) 146.48%, rgba(48, 46, 42, 0.20) 146.48%), #131313;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 98px;
+    display: none;
+}
+
+.card:nth-child(2){
+    margin: 40px 0 0 -200px;
+    z-index: 2;
+    background: #fff;
+}
+
+.card:nth-child(2) p{
+    color: #131313!important;
+}
+
+
 @media (max-width: 1300px) {
     
     .sign_up_modal_div {

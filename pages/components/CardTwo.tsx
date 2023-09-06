@@ -5,19 +5,21 @@ import styles from '@/styles/Components.module.css'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
-export default function Card() {
+export default function CardTwo() {
   return (
         <div className={styles.card}>
             <div className={styles.card_details}>
                 <div>
-                    <Image src="/favicon.svg" width={27} height={37} alt="slickinvest logo" />
+                    <Image src="/purple logo.svg" width={27} height={37} alt="slickinvest logo" />
 
-                    <svg width="45" height="34" viewBox="0 0 45 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g opacity="0.7">
-                            <rect x="1.27587" y="0.981861" width="42.5529" height="32.1267" rx="5.78928" fill="white" fill-opacity="0.26" stroke="white" stroke-width="1.2374"/>
-                            <path d="M1.34174 10.6265H12.5065C14.276 10.6265 15.7104 12.061 15.7104 13.8305V18.6662M15.7104 33.0691V26.7058M15.7104 26.7058V18.6662M15.7104 26.7058H1.34174M15.7104 18.6662H1.34174" stroke="white" stroke-width="1.2374"/>                        <path d="M43.7636 10.6265H30.0791M30.0791 10.6265V18.6661M30.0791 10.6265V1.04736M30.0791 33.069V26.7058M30.0791 26.7058V18.6661M30.0791 26.7058H43.7636M30.0791 18.6661H43.7636" stroke="white" stroke-width="1.2374"/>
-                        </g>
+                    <svg width="52" height="40" viewBox="0 0 52 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.8">
+                    <rect x="1.03862" y="1.16936" width="50.0265" height="37.8208" rx="5.78928" fill="#A39C9C" fill-opacity="0.15" stroke="#2F2F2F" stroke-width="1.2374"/>
+                    <path d="M1.22092 12.5656H14.8379C16.6074 12.5656 18.0419 14.0001 18.0419 15.7696V21.9773M18.0419 38.8384V31.3891M18.0419 31.3891V21.9773M18.0419 31.3891H1.22092M18.0419 21.9773H1.22092" stroke="#2F2F2F" stroke-width="1.2374"/>
+                    <path d="M50.8828 12.5656H34.8628M34.8628 12.5656V21.9773M34.8628 12.5656V1.35162M34.8628 38.8383V31.3891M34.8628 31.3891V21.9773M34.8628 31.3891H50.8828M34.8628 21.9773H50.8828" stroke="#2F2F2F" stroke-width="1.2374"/>
+                    </g>
                     </svg>
+
                 </div>
 
                 <article>
