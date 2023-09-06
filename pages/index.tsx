@@ -7,6 +7,7 @@ import Hero from './containers/Hero'
 import CardSection from './containers/CardSection'
 import WhySection from './containers/WhySection'
 import TestimonialSection from './containers/TestimonialSection'
+import Footer from './containers/Footer'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function Home() {
         <CardSection/>
         <WhySection/>
         <TestimonialSection/>
+        <Footer/>
       </main>
     </>
   )
