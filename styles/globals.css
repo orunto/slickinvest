@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #F8D57E;
+  color: #8E239A;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -84,6 +84,10 @@ p {
   line-height: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
 
 @media (max-width: 1300px) {
   h1 {
@@ -99,7 +103,7 @@ p {
   }
   
   p {
-  font-size: 16px!important;
+  font-size: 16px;
  }
 }
 
