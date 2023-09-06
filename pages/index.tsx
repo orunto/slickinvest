@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import NavBar from './containers/NavBar'
 import Hero from './containers/Hero'
 import CardSection from './containers/CardSection'
+import WhySection from './containers/WhySection'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Home() {
         <NavBar/>
         <Hero/>
         <CardSection/>
+        <WhySection/>
       </main>
     </>
   )

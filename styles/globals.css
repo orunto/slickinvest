@@ -67,9 +67,10 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 48px;
   font-style: normal;
   line-height: normal;
+  font-weight: bolder;
 }
 
 header {
