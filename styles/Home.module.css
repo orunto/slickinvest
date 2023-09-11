@@ -595,8 +595,8 @@
 
 
   .WhySection {
-    padding: 0 24px;
-    width: calc(100% - 48px);
+    padding: 0 32px;
+    width: calc(100% - 64px);
     margin-top: 68px;
   }
 
