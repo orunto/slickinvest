@@ -55,7 +55,7 @@ export default function Hero() {
           <div className={styles.hero_top_testimonial}>
             {/* <Image src='/Testimonial Top.webp' width={500} height={588} alt="background" className={styles.hero_top_testimonial_img}/> */}
 
-            <article className={styles.ronald}>
+            {/* <article className={styles.ronald}>
               <Image src='/Ronald.png' width={37} height={37} alt="Ronald"/>
               <p>
                 <header>Ronald Richards</header>
@@ -69,7 +69,7 @@ export default function Hero() {
                 <header>Jenny Wilson</header>
                 I used SlickInvest to receive payment from my company monthly and it was fast.
               </p>
-            </article>
+            </article> */}
           </div>
         </div>
         

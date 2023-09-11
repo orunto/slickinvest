@@ -78,7 +78,7 @@ export default function NavBar() {
                 </ul>
             </div>
 
-            <AnimatePresence>
+            {/* <AnimatePresence>
                 {productOpen && (
                     <motion.div className={styles.product_nav} 
                         initial={{ y: -500 }} 
@@ -91,14 +91,14 @@ export default function NavBar() {
                         <li><Link activeClass="active" to="products" spy={true} smooth={true} offset={-70} duration={500}>Wallet</Link></li>
                     </ul>
                 </motion.div>)}
-            </AnimatePresence>
+            </AnimatePresence> */}
 
             <AnimatePresence>
                 {isOpen && (
                         <motion.div onMouseLeave={handleOpen} className={styles.mobile_nav} 
-                            initial={{ y: -280 }} 
+                            initial={{ y: -480 }} 
                             animate={{ y: 0 }} 
-                            exit={{ y: -280 }}
+                            exit={{ y: -480 }}
                             transition={{ duration: 0.5 }}
                         >
                             <ul>
@@ -115,7 +115,7 @@ export default function NavBar() {
                                 
                             </motion.li>
 
-                                <AnimatePresence>
+                                {/* <AnimatePresence>
                                     {productOpenToo && (
                                             <motion.ul className={styles.product_list} 
                                                 initial={{ opacity: 0 }} 
@@ -128,7 +128,7 @@ export default function NavBar() {
                                             </motion.ul>
                                         )
                                     }
-                                </AnimatePresence>
+                                </AnimatePresence> */}
                             </ul>
 
                             <ul>

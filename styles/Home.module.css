@@ -10,7 +10,10 @@
 
 .Hero {
   width: 100%;
+  background-image: url('/Mask.webp');
   background-color: #07051B;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,7 +122,7 @@
   width:  500px;
   height: 588px;
 
-  background-image: url('/Testimonial Top.webp');
+  background-image: url('/Image.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -143,6 +146,7 @@
 }
 
 .ronald {
+  display: none;
   top: 522px;
   right: 332px;
 }
@@ -150,6 +154,7 @@
 
 .jenny {
   top: 472px;
+  display: none;
   right: 33px;
 }
 
@@ -548,6 +553,33 @@
   }
   .hero_top {
     padding: 100px 0 0 32px;
+    max-height: 900px;
+    width: calc(100% - 32px)
+  }
+
+  .hero_top h1 {
+    font-size: 32px
+  }
+
+  .hero_top_stats_div {
+    /* flex-direction: column; */
+    margin: 0;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .hero_top_stats_pics img:nth-child(1) {
+    margin-left: 0
+  }
+
+  .hero_top_stats_div hr {
+    display: none;
+  }
+
+  .hero_top_testimonial {
+    width: 100%;
+    height: 403px;
+    background-position: center;
   }
 
   .hero_companies {
@@ -566,6 +598,10 @@
     padding: 0 24px;
     width: calc(100% - 48px);
     margin-top: 68px;
+  }
+
+  .WhySection h3 {
+    font-size: 32px;
   }
 
   .why_details div {
