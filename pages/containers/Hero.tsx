@@ -19,8 +19,8 @@ export default function Hero() {
             </article>
 
             <div className={styles.hero_top_stats}>
-              <button className={manrope.className}>Get Started</button>
-              <div className={styles.hero_top_stats_div}>
+              <motion.button className={manrope.className} initial={{ x: -500 }} animate={{ x: 0, transition: { type: 'spring', delay: 2 } }}>Get Started</motion.button>
+              <motion.div className={styles.hero_top_stats_div}  initial={{ y: -500 }} animate={{ y: 0, transition: { type: 'spring', delay: 2.5 } }}>
                 <div className={styles.hero_top_stats_pics}>
                   <Image src='/Ellipse 3.png' width={60} height={60} alt="stock photo"/>
                   <Image src='/Ellipse 4.png' width={60} height={60} alt="stock photo"/>
@@ -51,11 +51,11 @@ export default function Hero() {
 
                   &nbsp; Rating
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
 
-          <div className={styles.hero_top_testimonial} initial={{ opacity:  }} animate={{ opacity: 1, transition: { type: 'spring', delay: 2, duration: 0.3 } }}>
+          <motion.div className={styles.hero_top_testimonial} initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { type: 'spring', delay: 3, duration: 0.3 } }}>
             {/* <Image src='/Testimonial Top.webp' width={500} height={588} alt="background" className={styles.hero_top_testimonial_img}/> */}
 
             {/* <article className={styles.ronald}>
@@ -73,7 +73,7 @@ export default function Hero() {
                 I used SlickInvest to receive payment from my company monthly and it was fast.
               </p>
             </article> */}
-          </div>
+          </motion.div>
         </div>
         
         <motion.div className={styles.hero_companies} initial={{ y: -500 }} animate={{ y: 0, transition: { type: 'spring', delay: 2.5 } }}>
