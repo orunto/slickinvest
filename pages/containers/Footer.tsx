@@ -16,7 +16,7 @@ export default function Footer() {
     };
 
   return (
-    <footer className={`${styles.footer} ${manrope.className}`}>
+    <footer className={`${styles.footer} ${manrope.className}`} onMouseEnter={handleFooter} onTouchStart={handleFooter}>
         {footerPop && (
             <>
             
