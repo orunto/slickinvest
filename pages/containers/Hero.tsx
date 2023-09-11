@@ -14,8 +14,8 @@ export default function Hero() {
         <div className={styles.hero_top}>
           <div className={styles.hero_top_div}>
             <article className={styles.hero_top_tag}>
-              <h1>LET SOME ELEGANCE INTO YOUR FINANCE</h1>
-              <p>Simplify your financial journey with us. Join today and experience hassle-free banking experience.</p>
+              <motion.h1 initial={{ x: -500 }} animate={{ x: 0, transition: { type: 'spring', delay: 1 } }}>LET SOME ELEGANCE INTO YOUR FINANCE</motion.h1>
+              <motion.p initial={{ x: -500 }} animate={{ x: 0, transition: { type: 'spring', delay: 1.5 } }}>Simplify your financial journey with us. Join today and experience hassle-free banking experience.</motion.p>
             </article>
 
             <div className={styles.hero_top_stats}>
@@ -55,7 +55,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className={styles.hero_top_testimonial}>
+          <div className={styles.hero_top_testimonial} initial={{ opacity:  }} animate={{ opacity: 1, transition: { type: 'spring', delay: 2, duration: 0.3 } }}>
             {/* <Image src='/Testimonial Top.webp' width={500} height={588} alt="background" className={styles.hero_top_testimonial_img}/> */}
 
             {/* <article className={styles.ronald}>
@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
         </div>
         
-        <motion.div className={styles.hero_companies} initial={{ y: 500 }} animate={{ y: 0, transition: { type: 'spring', delay: 1 } }}>
+        <motion.div className={styles.hero_companies} initial={{ y: -500 }} animate={{ y: 0, transition: { type: 'spring', delay: 2.5 } }}>
           <svg xmlns="http://www.w3.org/2000/svg" width="138" height="19" viewBox="0 0 138 19" fill="none">
             <path d="M59.8758 12.5828H68.9383L64.1464 4.87336L55.3516 18.8124H51.3489L62.0463 2.06864C62.5114 1.39212 63.2866 0.983398 64.1464 0.983398C64.9779 0.983398 65.7531 1.37803 66.2041 2.04045L76.9438 18.8124H72.9411L71.0525 15.6976H61.8772L59.8758 12.5828ZM101.453 15.6976V1.15253H98.0567V17.1211C98.0567 17.558 98.2259 17.9809 98.55 18.305C98.8741 18.6292 99.3111 18.8124 99.7903 18.8124H115.28L117.281 15.6976H101.453ZM45.2603 13.0902C48.5583 13.0902 51.2362 10.4264 51.2362 7.12841C51.2362 3.8304 48.5583 1.15253 45.2603 1.15253H30.4008V18.8124H33.7962V4.26732H45.0348C46.6134 4.26732 47.8818 5.54987 47.8818 7.12841C47.8818 8.70695 46.6134 9.98952 45.0348 9.98952L35.4593 9.97542L45.5985 18.8124H50.5315L43.71 13.0902H45.2603ZM9.4994 18.8124C4.6242 18.8124 0.667969 14.8661 0.667969 9.98952C0.667969 5.11296 4.6242 1.15253 9.4994 1.15253H19.764C24.6406 1.15253 28.594 5.11296 28.594 9.98952C28.594 14.8661 24.6406 18.8124 19.764 18.8124H9.4994ZM19.5357 15.6976C22.6943 15.6976 25.2523 13.1466 25.2523 9.98952C25.2523 6.83244 22.6943 4.26732 19.5357 4.26732H9.72627C6.56919 4.26732 4.00965 6.83244 4.00965 9.98952C4.00965 13.1466 6.56919 15.6976 9.72627 15.6976H19.5357ZM84.0331 18.8124C79.1565 18.8124 75.1961 14.8661 75.1961 9.98952C75.1961 5.11296 79.1565 1.15253 84.0331 1.15253H96.2245L94.2372 4.26732H84.2586C81.1015 4.26732 78.5364 6.83244 78.5364 9.98952C78.5364 13.1466 81.1015 15.6976 84.2586 15.6976H96.5063L94.505 18.8124H84.0331ZM125.568 15.6976C122.961 15.6976 120.748 13.9499 120.072 11.5399H134.589L136.59 8.42507H120.072C120.748 6.02908 122.961 4.26732 125.568 4.26732H135.533L137.548 1.15253H125.343C120.466 1.15253 116.506 5.11296 116.506 9.98952C116.506 14.8661 120.466 18.8124 125.343 18.8124H135.815L137.816 15.6976H125.568Z" fill="#EA1B22"/>
           </svg>
