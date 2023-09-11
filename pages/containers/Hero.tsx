@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
 
           <div className={styles.hero_top_testimonial}>
-            <Image src='/Testimonial Top.webp' width={500} height={588} alt="background" className={styles.hero_top_testimonial_img}/>
+            {/* <Image src='/Testimonial Top.webp' width={500} height={588} alt="background" className={styles.hero_top_testimonial_img}/> */}
 
             <article className={styles.ronald}>
               <Image src='/Ronald.png' width={37} height={37} alt="Ronald"/>

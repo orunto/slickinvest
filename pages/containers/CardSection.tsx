@@ -27,9 +27,9 @@ export default function CardSection() {
                 </article>
 
                 <div className={styles.cards}>
-                    <Card/>
+                    <Image src="/Card Purple.svg" width={314} height={490} alt="Purple card" />
 
-                    <CardTwo/>
+                    <Image className={styles.card_two} src="/Card White.svg" width={314} height={490} alt="Purple card" />
                 </div>
 
             </div>
