@@ -197,6 +197,7 @@
   margin-top: 224px;
   display: flex;
   gap: 32px;
+  min-height: 604px;
   justify-content: center;
 }
 

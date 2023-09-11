@@ -22,7 +22,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <motion.main className={`${styles.main} ${manrope.className}`} initial={{ opacity: 0}} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 0.5}}>
+      <motion.main 
+        className={`${styles.main} ${manrope.className}`} 
+        initial={{ opacity: 0}} 
+        animate={{ opacity: 1 }} 
+        transition={{ delay: 0.5, duration: 0.5}}
+      >
         <NavBar/>
         <Hero/>
         <CardSection/>
