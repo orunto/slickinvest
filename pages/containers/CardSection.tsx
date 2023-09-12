@@ -41,8 +41,8 @@ export default function CardSection() {
         <section className={`${styles.CardSection} ${manrope.className}`} >
                 <>
                     <motion.h2
-                        initial={{ opacity: 0 }} 
-                        whileInView={{ opacity: 1 }} 
+                        initial={{ opacity: 0, x: -300 }} 
+                        whileInView={{ opacity: 1, x: 0 }} 
                         transition={{ duration: 0.5 }}
                     >FEEL THE BEST EXPERIENCE WITH OUR FEATURES</motion.h2>
                     
