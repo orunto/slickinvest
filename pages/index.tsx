@@ -9,11 +9,21 @@ import WhySection from './containers/WhySection'
 import TestimonialSection from './containers/TestimonialSection'
 import Footer from './containers/Footer'
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState, useRef } from "react";
+import { motion, AnimatePresence, useScroll } from 'framer-motion'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
 export default function Home() {
+  const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["end end", "start start"]
+    });
+    const logProgress = () => {
+        console.log(scrollYProgress)
+    }
+
   return (
     <>
       <Head>
@@ -27,6 +37,9 @@ export default function Home() {
         initial={{ opacity: 0}} 
         animate={{ opacity: 1 }} 
         transition={{ delay: 0.5, duration: 0.5}}
+
+        ref={ref}
+        onClick={logProgress}
       >
         <NavBar/>
         <Hero/>

@@ -6,6 +6,9 @@
   padding: 0;
   min-height: 100vh;
   background: #fff;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .Hero {
@@ -333,7 +336,7 @@
   margin-top: 84px;
   border-top: 1px solid #EFF0F6;
   padding: 52px 100px 72px 100px;
-  min-height: 400px;
+  max-height: 434px;
 }
 
 .footer_top {
@@ -671,6 +674,7 @@
   .footer {
     padding: 68px 24px 0 24px;
     width: calc(100% - 48px);
+    max-height: 1036px;
   }
 
   .footer_bottom {
