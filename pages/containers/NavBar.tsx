@@ -25,23 +25,23 @@ export default function NavBar() {
 
     const handleOpen = () => {
         setIsOpen(!isOpen);
-        const nav = document.getElementById("nav")
+        // const nav = document.getElementById("nav") | null
 
-        if (isOpen == false ) {
-            setTimeout(() => {
+        // if (isOpen == false ) {
+        //     setTimeout(() => {
                 
-                nav.style.backgroundColor= "rgb(7, 5, 27, 0.6)"
-            }, 300);
+        //         nav.style.backgroundColor= "rgb(7, 5, 27, 0.6)"
+        //     }, 300);
 
-        }
+        // }
 
-        else {
-            setTimeout(() => {
+        // else {
+        //     setTimeout(() => {
                 
-                nav.style.backgroundColor= "transparent"
-            }, 300);
+        //         nav.style.backgroundColor= "transparent"
+        //     }, 300);
 
-        }
+        // }
     };
 
     const [productOpen, setProductOpen] = useState(false);
