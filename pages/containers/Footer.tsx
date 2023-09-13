@@ -17,12 +17,11 @@ export default function Footer() {
 
   return (
     <footer className={`${styles.footer} ${manrope.className}`} onMouseEnter={handleFooter} onTouchStart={handleFooter}>
-        {footerPop && (
             <>
             
                 <motion.div className={styles.footer_top} 
-                    initial={{ y: -1000  }} 
-                    animate={{ y: 0 }} 
+                    initial={{ opacity: 0, y: -200  }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
                     transition={{ delay: 0.5, duration: 0.5 }}
                 >
                     <h2>Ready to transact easily? Start with SlickInvest, become financially secured!</h2>
@@ -30,9 +29,9 @@ export default function Footer() {
                 </motion.div>
 
                 <motion.div className={styles.footer_bottom} 
-                    initial={{ y: 1000 }} 
-                    animate={{ y: 0 }} 
-                    transition={{ delay: 0.5, duration: 0.5 }}
+                    initial={{ opacity: 0, y: 200 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ duration: 0.5 }}
                 >
                     <div >
                         <Image src='/Logo Purple.svg' width={151} height={37} alt="Logo"/>
@@ -105,7 +104,6 @@ export default function Footer() {
                     </p>
                 </motion.div>
             </>
-        )}
     </footer>
   )
 }

@@ -16,6 +16,7 @@
     z-index: 2;
     position: relative;
     background-color: transparent;
+    transition: 0.3s;
     color: #fff;
 }
 
@@ -520,7 +521,6 @@
         flex-direction: column;
         gap: 32px;
         align-items: flex-end;
-        background-color: rgb(7, 5, 27, 0.6);
         transition: 0.3s;
         color: #fff
     }
